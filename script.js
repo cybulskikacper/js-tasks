@@ -1,9 +1,8 @@
+const color = 'blue'
+const newColor = 'green '
 
-
-x = 50 
-y = 30 
-
-
-if(x > y) { 
-    console.log(`${x} jest większe niż ${y}`);
+if (color === newColor) {
+	console.log('Kolory się zgadzają')
+} else {
+	console.log('Kolory się nie zgadzają')
 }
