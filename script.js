@@ -1,16 +1,11 @@
+const x = 50
+let text
 
-const promo = '1312131%'
-
-switch(promo) { 
-    case '10%': 
-    console.log('Promocja wynosi 10%');
-    break
-    case '20%': 
-    console.log('Promocja wynosi 20%');
-    break
-    case '30%': 
-    console.log('Promocja wynosi 30%');
-    break
-    default:
-        console.log(`Niestety promocja wynosi dziś ${promo}`);
+if (x >= 100) {
+	text = 'x > 100'
+} else if (x < 100 && x > 30) {
+	text = 'x jest średniakiem'
+} else {
+	text = 'x jest mały '
 }
+console.log(text.toUpperCase())
