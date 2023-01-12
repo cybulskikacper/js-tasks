@@ -1,8 +1,14 @@
-const cities = ['London', 'New York', 'Berlin', 'Warsaw', 'Tokyo']
+const numbers = [5,8,10,23,48,60]
 
-for (let i = 0; i < cities.length; i++) {
+for(const number of numbers) { 
+    console.log(number / 5);
+}
+console.log('-----');
 
-    console.log(`To miasto nazywa się ${cities[i].toUpperCase()}`);
-
-
+for(const number of numbers) { 
+    if(number %2 === 0) { 
+        console.log(`%cLiczba ${number} jest parzysta`,'background-color:gold;font-size:16px');
+    } else { 
+        console.log(`%cLiczba ${number} nie jest parzysta`, 'background-color:tomato; font-size:16px');
+    }
 }
