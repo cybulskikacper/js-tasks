@@ -1,11 +1,8 @@
-const x = 50
-let text
+const cities = ['London', 'New York', 'Berlin', 'Warsaw', 'Tokyo']
 
-if (x >= 100) {
-	text = 'x > 100'
-} else if (x < 100 && x > 30) {
-	text = 'x jest średniakiem'
-} else {
-	text = 'x jest mały '
+for (let i = 0; i < cities.length; i++) {
+
+    console.log(`To miasto nazywa się ${cities[i].toUpperCase()}`);
+
+
 }
-console.log(text.toUpperCase())
