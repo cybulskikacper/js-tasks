@@ -1,4 +1,17 @@
 body {
 	font-size: 24px;
-	background-color: magenta;
+	background-color: royalblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	position: absolute;
+	top: 50%;
+}
+
+h1:hover{ 
+	visibility: hidden;
+	cursor: pointer;
 }
