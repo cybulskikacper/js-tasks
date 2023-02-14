@@ -1,13 +1,133 @@
-{\rtf1\ansi\ansicpg1250\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red252\green93\blue186;\red13\green16\blue19;\red246\green246\blue239;
+\red72\green255\blue104;\red253\green170\blue90;\red124\green228\blue252;\red238\green252\blue122;\red0\green0\blue0;
+\red0\green0\blue0;\red179\green189\blue242;\red20\green20\blue28;\red121\green213\blue255;\red104\green141\blue245;
+\red137\green173\blue242;\red215\green160\blue86;\red153\green160\blue204;\red172\green130\blue245;\red142\green199\blue87;
+\red100\green212\blue190;\red253\green139\blue82;\red255\green255\blue255;\red251\green0\blue7;\red255\green255\blue255;
+\red109\green195\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c47451\c77647;\cssrgb\c5490\c7843\c9804;\cssrgb\c97255\c97255\c94902;
+\cssrgb\c31373\c98039\c48235;\cssrgb\c100000\c72157\c42353;\cssrgb\c54510\c91373\c99216;\cssrgb\c94510\c98039\c54902;\cssrgb\c0\c0\c0;
+\cssrgb\c0\c1\c1;\cssrgb\c75294\c79216\c96078;\cssrgb\c10196\c10588\c14902;\cssrgb\c53725\c86667\c100000;\cssrgb\c47843\c63529\c96863;
+\cssrgb\c60392\c74118\c96078;\cssrgb\c87843\c68627\c40784;\cssrgb\c66275\c69412\c83922;\cssrgb\c73333\c60392\c96863;\cssrgb\c61961\c80784\c41569;
+\cssrgb\c45098\c85490\c79216;\cssrgb\c100000\c61961\c39216;\cssrgb\c100000\c100000\c99971;\cssrgb\c100000\c12195\c0;\cssrgb\c100000\c100000\c99985;
+\cssrgb\c49020\c81176\c100000;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 \
+map():\
+-podobna do p\uc0\u281 tli, wykonuje jaki\u347  kod na ka\u380 dym elemencie tablicy \
+\
+- w nawiasach podajemy nazw\uc0\u281  funkcji, kt\'f3rej kod ma si\u281  wykona\u263  na elementach tablicy \
+\
+-zwraca now\uc0\u261  tablic\u281  	\
+\
+\
+Callback - funkcja kt\'f3ra przekazujemy jako argument do innej funkcji\
+\
+Foreach - bierze tablice na kt\'f3ra nak\uc0\u322 adamy metod\u281  i na ka\u380 dym jej elemencie jest wykonywany jaki\u347  kod. \
+\
+\
+Je\uc0\u380 eli b\u281 dziemy chcemy sprawdzi\u263  czy w naszej tablicy nie ma jakiego\u347  elementu to u\u380 ywamy do tego indexOf, je\u380 eli zwr\'f3ci -1 to znaczy ze nasza tablic nie zwraca tego elementu. \
+\
+Function jak var zawiera hoisting - wszystkie elementy wynoszone s\uc0\u261  na sam\u261  g\'f3r\u281 , czyli kod czytany jest od g\'f3ry do do\u322 u, lecz przy u\u380 yciu funkcji mo\u380 na najpierw j\u261  wywo\u322 a\u263  a potem ja dopiero napisa\u263 . Hoisting jak by automatycznie wynosi funkcje na sam\u261  g\'f3r\u281  \
+\
+\
+Wyra\uc0\u380 enie funkcyjne - polega na tym ze tworzymy sobie zmienna i mo\u380 emy przypisa\u263  do niej funkcje, wywo\u322 ujemy ja normalnie jak ka\u380 d\u261  funkcje czyli (), ale jak wywo\u322 anie damy teraz na sama g\'f3r\u281  to nie zadzia\u322 a. \
+\
+Parametry - podajemy podczas tworzenia funkcji \
+\
+Argumenty - podajemy podczas wywo\uc0\u322 ywania funkcji\
+\
+Return ko\uc0\u324 czy dzia\u322 anie funkcji \
 \
 \
 \
-	CONST && LET \
-	}
+Funkcja strza\uc0\u322 kowa  - Gdy mamy podany tylko jeden parametr nie potrzebujemy dodawa\u263  nawias\'f3w\
+\
+Ciekawy zapis funkcji strza\uc0\u322 kowej:  \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+const\cf4  \cf5 test3\cf4  \cf2 =\cf4  \cf6 name\cf4  \cf2 =>\cf4  console\cf2 .\cf7 table\cf4 (\cf8 `Mam na imi\uc0\u281 : \cf2 $\{\cf4 name\cf2 \}\cf8 `\cf4 )\cb1 \
+\cf7 \cb3 test3\cf4 (\cf8 "Karol"\cf4 )\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf9 \
+SPREAD\
+-Dzia\uc0\u322 a na tablicach\
+-Za jego pomoc\uc0\u261  mo\u380 na rozsmarowa\u263  tablic\u281 \
+\
+REST\
+-Dzia\uc0\u322 a na funkcjach\
+-Z kilku, pojedynczych argument\'f3w stworzymy sobie funkcje.\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \
+Gdy pracujemy na \uc0\u380 ywych kolekcjach lepszym wyborem b\u281 dzie uzycie getElementsByTag/ ClassName ni\u380  qSA, poniewa\u380  qSA ignoruje \u380 ywe kolekcje, czyli elementy dodane w JS a nie r\u281 cznie w html \cf4 \
+\
+\
+\cf10 R\'f3\uc0\u380 nica mi\u281 dzy append a appendchild:\
+-append jest nowszy \
+-przy u\uc0\u380 yciu appendchild nie mo\u380 na doda\u263  wielu element\'f3w, a przy append mo\u380 na\
+- za pomoc\uc0\u261  appendchild nie mo\u380 na doda\u263  zwyk\u322 ego stringu \
+\
+\
+\
+innerText - w clg wy\uc0\u347 wietli nam tekst w buttonie \
+outerHTML - w clg wyloguje nam tag jak i tekst\
+innerHTML - w clg wyloguje nam sam tekst, mo\uc0\u380 na tylko u\u380 ywa\u263  gdy my wprowadzamy kod, gdy u\u380 ytkownik ma wgl\u261 d do danej funkcji to nie mo\u380 e by\u263  napisana za pomoc\u261  innera bo nara\u380 amy si\u281  wtedy na ataki\cf4 \
+\
+\
+\cf10 R\'f3\uc0\u380 nica miedzy textcontent a innerText: \
+\
+-je\uc0\u380 eli pobierzemy w js co\u347  z htmla kt\'f3re jest oscylowane w html, to textcontent wyloguje cala zawarto\u347 \u263  czyli normalnie ze <span>text</span> \
+\
+A innestelt wyloguje nam to normalnie ze stylami \
+\
+\
+Podczas pracowania z listenerami lepiej unika\uc0\u263  funkcji anonimowych\
+Listenery najlepiej trzyma\uc0\u263  na dole strony \
+\
+Je\uc0\u380 eli mamy 3 buttony i chcemy je pobra\u263  za pomoc\u261  listenera za jednym razem to po prostu nak\u322 adamy listener na document, ale \u380 eby za jednym razem po kliku wykona\u322 a si\u281  jaka\u347  funkcja to do tego musimy u\u380 y\u263  p\u281 tli np. forEach \
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb12 btns\cf13 .\cf14 forEach\cf15 (\cf16 btn\cf17  \cf18 =>\cf17  \cf11 btn\cf13 .\cf14 addEventListener\cf15 (\cf13 '\cf19 click\cf13 ',\cf17  \cf11 smile\cf15 ))\cf17 \cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 Event (e) -> za pomoc\uc0\u261  e.target odnosimy si\u281  do elementu kt\'f3ry klikamy\
+\
+\
+Bubbling & capturing\
+\
+\
+Domy\uc0\u347 lnie szli\u347 my od g\'f3ry do do\u322 u czyli by\u322 a to faza przechwytywania, a je\u380 eli p\'f3jdzie od do\u322 u do g\'f3ry to jest to faza b\u261 belkowania lecz ona nie wykona ju\u380  kodu bo zosta\u322  on wykonany podczas fazy przechwytywania \
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb12 lime\cf13 .\cf14 addEventListener\cf15 (\cf13 '\cf19 click\cf13 ',\cf17  \cf11 infoLime\cf13 ,\cf17  \cf15 \{\cf17  \cf20 capture\cf13 :\cf17  \cf21 true\cf17  \cf15 \}) <- zapis b\uc0\u261 belkowy,capture zamienia to w zapis b\u261 belk\'f3w\cf17 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26\fsmilli13328 \cf10 stopPropagation() <- konczy nam faz\uc0\u281  babelkowadnia\cf23 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf17 \
+\cf10 \
+Podczas akordeonu gdy mamy svg to useful jest pointer-events:none, jest to zabezpieczenie ze gdy kto\uc0\u347  wymierzy idealnie w mini pixel w akordeonie to nic si\u281  nie dzieje\
+\
+Delegacja zdarze\uc0\u324 : \
+\
+-pobieramy sobie rodzica, nadajemy na rodzicu listenera, w tym rodzicu mo\uc0\u380 na napisa\u263  ifa i sprawdzi\u263  w co klikamy. A jak klikniemy w to co ch	cieli\u347 my klikn\u261 \u263  to wykonamy jaki\u347  kod \
+\
+\pard\pardeftab720\partightenfactor0
+\cf25 \cb12 classList\cf13 .\cf14 toggle <\'97 Toggle sprawdza czy element ma jaka\uc0\u347  klas\u281 , jak nie ma to ja doda, a jak ma to ja zabierze. Co\u347  jak w\u322 \u261 cznik/wy\u322 \u261 cznik \u347 wiat\u322 a\cf17 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \
+\
+}
